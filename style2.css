@@ -1,0 +1,144 @@
+
+/* Основные стили для body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Стили для заголовков */
+h1 {
+    color: black !important;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: black;
+    margin-top: 20px;
+}
+
+/* Стили для горизонтальных линий */
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+}
+
+/* Стили для списка описаний */
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+/* Стили для нумерованного списка */
+ol {
+    list-style-type: decimal;
+    margin-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Стили для текста внутри тега span с классом dz3 */
+span.dz3 {
+    font-style: italic;
+    color: gray;
+}
+
+/* Стили для ссылок с классом A_label */
+a.A_label {
+    color: blue;
+    text-decoration: none;
+}
+
+a.A_label:hover {
+    text-decoration: underline;
+}
+/* Стили для списка фруктов */
+.fruit-list {
+    background-color: #f89090; /* Светлый фон у всего списка */
+    padding: 20px; /* Отступ внутри списка */
+    margin: 20px; /* Отступ снаружи списка */
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+.fruit-list li {
+    background-color: #f16060; /* Более темный фон у каждого элемента списка */
+    margin: 10px 0; /* Отступы между элементами списка */
+    padding: 10px; /* Отступ внутри каждого элемента списка */
+}
+
+.fruit-list .highlight {
+    background-color: #9c1919; 
+
+    
+    
+}
+
+.fruit-list li::before {
+    content: "•"; /* Добавляем маркер в виде точки */
+    color: #333; /* Цвет маркера */
+    font-weight: bold; /* Жирный маркер */
+    display: inline-block; 
+    width: 1em; /* Отступ для маркера */
+    margin-left: -1em; /* Сдвигаем маркер влево */
+}
+/* Стили для списка задач */
+.task-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы по умолчанию */
+    margin: 20px; /* Отступ снаружи списка */
+}
+
+.task-list li {
+    padding: 10px; /* Отступ внутри каждого элемента списка */
+    margin: 5px 0; /* Отступы между элементами списка */
+    font-family: 'Roboto', sans-serif; /* Шрифт */
+    display: flex; /* Для выравнивания иконки и текста */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+/* Четные элементы списка */
+.task-list li:nth-child(even) {
+    background-color: #e0f7fa; /* Голубой фон (светлый оттенок) */
+}
+
+/* Нечетные элементы списка */
+.task-list li:nth-child(odd) {
+    background-color: #b2ebf2; /* Голубой фон (темный оттенок) */
+}
+
+/* Отмеченные элементы списка */
+.task-list li.checked {
+    background-color: #cfd8dc; /* Серый фон */
+    text-decoration: line-through; /* Зачеркнутый текст */
+    color: #757575; /* Серый цвет текста */
+}
+
+/* Иконка для неотмеченных элементов */
+.task-list li::before {
+    content: "✖"; /* Красный крестик */
+    color: red; /* Цвет крестика */
+    margin-right: 10px; /* Отступ справа от иконки */
+}
+
+/* Иконка для отмеченных элементов */
+.task-list li.checked::before {
+    content: "✔"; /* Галочка */
+    color: green; /* Цвет галочки */
+}
