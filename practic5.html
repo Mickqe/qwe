@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="practic5style.css">
+</head>
+<body>
+  <form>
+    <h2>Форма для пооиска</h2>
+    <input type="text"/>
+    <input type="submit" value="Поиск"/>
+    <input type="reset" value="Очистить">
+  </form>
+<hr>
+<form action="/search" method="POST">
+  <h2>Введите сообщение для отправки</h2>
+  <div>
+    <label for="uname">Name</label>
+    <input type="text" id="uname" name="userName">
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email"name="userName">
+  </div>
+    <div>
+    <label for="message">Messa</label>
+    <textarea id="message" name="message"></textarea>
+  </div>
+  <div>
+      <label for="password">Пароль</label>
+      <input type="password" id ='password' name="userPassword">
+  </div>
+    <div>
+      <h2>Ваш пол</h2>
+    <input type="radio" id ='gender1' value="mail" name="sex">
+    <label for="gender1">Мужской</label>
+    <input type="radio" id ='gender2' value="mail" name="sex">
+    <label for="gender2">Женский</label>
+  </div>
+    <div>
+      <h2>Занятость</h2>
+      <select id="ucheb" name="uscheba">
+        <option>Учусь в школе</option>
+        <option>Учусь в вузе</option>
+        <option>Учусь в колледже</option>
+        <option>Работаю</option>
+      </select>
+    </div>
+  <div>
+    <input type="checkbox" id ='news' name="userCheck">
+    <label for="news">Подписка на рассылку</label>
+  </div>
+  <div>
+       <input type="submit" value="Поиск"/>
+  </div>
+<hr>
+</form>
+</body>
+</html>
