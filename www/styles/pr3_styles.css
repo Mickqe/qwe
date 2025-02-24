@@ -1,0 +1,90 @@
+.card-form{
+    padding-top: 150px;
+    padding-left: 20px;
+    background-image: url('https://gamedev.ru/files/images/ml4gxyze4q8.jpg');
+    background-size: cover;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 660px;
+    margin-top: 240px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+#cardNumber{
+    opacity: 0.6;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#cardNumber:hover{
+    border: none;
+    cursor: pointer;
+}
+#cardNumber:action{
+    border: none;
+}
+
+
+#nameOn{
+    opacity: 0.6;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#nameOn:hover{
+    border: none;
+    cursor: pointer;
+}
+#cardNumber:action{
+    border: none;
+}
+
+#Date1{
+    opacity: 0.6;
+    margin-top: 30px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid black;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+#Date2{
+    opacity: 0.6;
+    margin-left: 120px;
+    height: 40px;
+    width: 70px;
+    margin-top: -40px;
+    border: 1px solid black;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+#cvv{
+    opacity: 0.6;
+    margin-top: -40px;
+    margin-left: 240px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid black;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.line{
+    width: 500px;
+    height: 40px;
+    margin-left: -50px;
+    margin-top: -300px;
+    padding-top: 20px;
+    padding-left: 30px;
+    background: #006b40;
+    border-radius: 3px;
+    color: white;
+}

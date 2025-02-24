@@ -1,0 +1,76 @@
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card-form {
+            background-image: url('https://via.placeholder.com/400x250.png?text=Bank+Card+Background');
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 250px;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            color: white;
+        }
+
+        .card-form input {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .card-form input::placeholder {
+            color: #666;
+        }
+
+        .card-form .card-number {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .card-form .card-holder {
+            margin-top: 10px;
+        }
+
+        .card-form .expiration-cvv {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .card-form .expiration-cvv input {
+            width: 48%;
+        }
+
+        .card-form .expiration-cvv input:last-child {
+            width: 30%;
+        }
+
+        .card-form button {
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .card-form button:hover {
+            background: #0056b3;
+        }

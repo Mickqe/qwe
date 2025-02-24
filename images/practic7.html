@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs</title>
+    <link rel="stylesheet" href="practic7.css">
+</head>
+<body>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e6e6e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+ .buttons {
+            background:#e6e6e6 ;
+            color: Black;
+            border: 10;
+            border-radius: 5px;
+            padding: 0px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+input[type="checkbox"] {
+  appearance: none; /* Убираем стандартное отображение checkbox */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: green;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '\2713'; /* Юникод символ галочки */
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:disabled:checked {
+    background-color: red;
+    border-color: red;
+}
+
+/* Стили для radio buttons */
+input[type="radio"] {
+  appearance: none; /* Убираем стандартное отображение radio button */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Круглая форма */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  border-color: green;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #e6e6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .buttons-container {
+            background: #e6e6e6;
+            padding: 20px; /* Optional: Add padding around the buttons */
+        }
+
+        .button { /* Common styles for all buttons */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            color: white; /* Set default text color */
+        }
+
+        .button:disabled {
+            opacity: 0.5; /* Indicate disabled state */
+            cursor: not-allowed;
+        }
+
+        .button.active {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .button.hover:hover {
+            background-color: #008CBA; /* Blue */
+        }
+
+        .button.danger {
+            background-color: #f44336; /* Red */
+        }
+
+        .button.plus {
+            background-color: #2196F3; /* Blue */
+        }
+
+        .button.minus {
+            background-color: #ff9800; /* Orange */
+        }
+</style>
+
+  <div class="formes">
+    <form action="/submit" method="post">
+        <div class="inputs">
+          <h2>inputs</h2>
+            <input type="text" id="inputsButton" name="inputsButton" placeholder="Enter some text" required>
+        </div>
+        <div>
+        <div class="Check boxes">
+          <h2>Check boxes</h2>
+            <input type="checkbox" id ='sub1' value="sub1" name="subscribe">
+            <label for="sub1">Subscribe</label>
+            <input type="checkbox" id ='sub2' value="sub2" name="subscribe">
+            <label for="sub2">Subscribe</label>
+       </div>
+      <div class="Radio buttons">
+        <h2>Radio buttons</h2>
+            <input type="radio" id ='gender1' value="mail" name="sex">
+            <label for="gender1">Male</label>
+            <input type="radio" id ='gender2' value="mail" name="sex">
+            <label for="gender2">Female</label>
+      </div>
+      <div class="buttons">
+        <h2>Radio buttons</h2>
+          <input type="button" id ='but1' value="Active" name="but1">
+          <input type="button" id ='but2' value="Hover" name="but2">
+          <input type="button" id ='but3' value="Danger" name="but3">
+          <input type="button" id ='but4' value="Hover" name="but4">
+          <input type="button" id ='but5' value="Disabled" name="but5">
+          <input type="button" id ='but6' value="+" name="but5">
+          <input type="button" id ='but7' value="-" name="but5">
+      </div>
+      <div class="Text area">
+        <h2>Text area</h2>
+            <label for="area"></label>
+            <textarea id="area" name="Area" placeholder="Enter some text..."></textarea>
+      </div>
+</body>
+</html>
